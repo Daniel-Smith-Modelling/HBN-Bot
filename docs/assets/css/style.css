@@ -67,3 +67,14 @@ body {
 .attachments a:hover {
     background: #3c4476;
 }
+
+/* Remove default link color and underline */
+a {
+    color: white;  /* Set link text to white */
+    text-decoration: none;  /* Remove underline by default */
+}
+
+/* Underline the link on hover */
+a:hover {
+    text-decoration: underline;  /* Underline on hover */
+}
