@@ -60,7 +60,7 @@ input[type="text"] {
 }
 
 .ticket-table th {
-    background-color: #5865f2; /* Discord blue */
+    background-color: #5865F2;
     color: white;
     font-weight: 600;
 }
