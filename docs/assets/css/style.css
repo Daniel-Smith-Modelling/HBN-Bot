@@ -1,3 +1,10 @@
+/* Dark Blue Mode */
+body {
+    background-color: #1b1f38;
+    color: #d1d5db;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
 /* Ticket listing page */
 .ticket-list {
     max-width: 800px;
@@ -8,23 +15,25 @@
 .ticket-table {
     width: 100%;
     border-collapse: collapse;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    background-color: #252b48;
+    color: #d1d5db;
 }
 
 .ticket-table th, 
 .ticket-table td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #3c4476;
 }
 
 .ticket-table th {
-    background-color: #5865F2;
+    background-color: #3c4476;
     color: white;
 }
 
 .ticket-table tr:hover {
-    background-color: #f5f5f5;
+    background-color: #2c3158;
 }
 
 /* Individual ticket view */
@@ -32,17 +41,17 @@
     max-width: 800px;
     margin: 2rem auto;
     padding: 20px;
-    background: #fff;
+    background: #252b48;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .message {
     margin: 1rem 0;
     padding: 1rem;
-    background: #f8f9fa;
+    background: #2c3158;
     border-radius: 8px;
-    border: 1px solid #e9ecef;
+    border: 1px solid #3c4476;
 }
 
 .attachments a {
@@ -53,4 +62,8 @@
     color: white;
     border-radius: 4px;
     text-decoration: none;
+}
+
+.attachments a:hover {
+    background: #3c4476;
 }
