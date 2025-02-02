@@ -1,97 +1,84 @@
 /* General Styles */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #2f3136; /* Discord's background color */
-    color: #dcddde; /* Light gray text color */
+    background-color: #2f3136; /* Discord's dark background */
+    color: #dcddde; /* Light gray text */
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: hidden;
 }
 
 /* Ticket listing page */
 .ticket-list {
-    max-width: 800px;
+    max-width: 900px;
+    width: 100%;
     margin: 2rem auto;
+    padding: 20px;
+    background-color: #36393f;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.ticket-table {
-    width: 100%;
-    border-collapse: collapse;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    background-color: #292b2f; /* Dark background for the table */
+/* Header */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: #dcddde;
 }
 
-.ticket-table th, 
+/* Search bar */
+input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #5865f2;
+    background: #40444b;
+    color: #dcddde;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* Ticket Table */
+.ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #292b2f;
+    color: #dcddde;
+    border-radius: 8px;
+}
+
+.ticket-table th,
 .ticket-table td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #4f545c; /* Light border color for rows */
+    border-bottom: 1px solid #4f545c;
 }
 
 .ticket-table th {
     background-color: #5865f2; /* Discord blue */
     color: white;
+    font-weight: 600;
 }
 
 .ticket-table tr:hover {
-    background-color: #3e4046; /* Darker gray for hover effect */
+    background-color: #3e4046;
 }
 
 /* Hyperlink Styling */
 .ticket-table a {
-    color: #5865f2; /* Discord Blue */
+    color: #5865f2;
     text-decoration: none;
 }
 
 .ticket-table a:visited {
-    color: #9b59b6; /* Purple when visited */
+    color: #9b59b6;
 }
 
 .ticket-table a:hover {
-    color: #a3b0d2; /* Light blue on hover */
-}
-
-/* Individual ticket view */
-.ticket-container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 20px;
-    background: #36393f; /* Dark background for the container */
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.message {
-    margin: 1rem 0;
-    padding: 1rem;
-    background: #40444b; /* Message background */
-    border-radius: 8px;
-    border: 1px solid #4f545c; /* Border similar to Discord's message borders */
-}
-
-.attachments a {
-    display: inline-block;
-    margin: 0.25rem;
-    padding: 0.25rem 0.5rem;
-    background: #5865f2;
-    color: white;
-    border-radius: 4px;
-    text-decoration: none;
-}
-
-.attachments a:hover {
-    background: #4f5b9d; /* Darker blue on hover */
-}
-
-/* Displaying Images */
-.attachment-image {
-    max-width: 100%;
-    border-radius: 8px;
-    margin: 0.5rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    transition: transform 0.2s;
-}
-
-.attachment-image:hover {
-    transform: scale(1.02); /* Slight zoom effect */
+    color: #a3b0d2;
 }
