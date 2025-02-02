@@ -1,30 +1,54 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #2f3136; /* Discord's background color */
+    color: #dcddde; /* Light gray text color */
+    margin: 0;
+    padding: 0;
+}
+
 /* Ticket listing page */
 .ticket-list {
     max-width: 800px;
     margin: 2rem auto;
-    font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 .ticket-table {
     width: 100%;
     border-collapse: collapse;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    background-color: #292b2f; /* Dark background for the table */
+    color: #dcddde;
 }
 
 .ticket-table th, 
 .ticket-table td {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #4f545c; /* Light border color for rows */
 }
 
 .ticket-table th {
-    background-color: #5865F2;
+    background-color: #5865f2; /* Discord blue */
     color: white;
 }
 
 .ticket-table tr:hover {
-    background-color: #f5f5f5;
+    background-color: #3e4046; /* Darker gray for hover effect */
+}
+
+/* Hyperlink Styling */
+.ticket-table a {
+    color: #5865f2; /* Discord Blue */
+    text-decoration: none;
+}
+
+.ticket-table a:visited {
+    color: #9b59b6; /* Purple when visited */
+}
+
+.ticket-table a:hover {
+    color: #a3b0d2; /* Light blue on hover */
 }
 
 /* Individual ticket view */
@@ -32,25 +56,42 @@
     max-width: 800px;
     margin: 2rem auto;
     padding: 20px;
-    background: #fff;
+    background: #36393f; /* Dark background for the container */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .message {
     margin: 1rem 0;
     padding: 1rem;
-    background: #f8f9fa;
+    background: #40444b; /* Message background */
     border-radius: 8px;
-    border: 1px solid #e9ecef;
+    border: 1px solid #4f545c; /* Border similar to Discord's message borders */
 }
 
 .attachments a {
     display: inline-block;
     margin: 0.25rem;
     padding: 0.25rem 0.5rem;
-    background: #5865F2;
+    background: #5865f2;
     color: white;
     border-radius: 4px;
     text-decoration: none;
+}
+
+.attachments a:hover {
+    background: #4f5b9d; /* Darker blue on hover */
+}
+
+/* Displaying Images */
+.attachment-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+}
+
+.attachment-image:hover {
+    transform: scale(1.02); /* Slight zoom effect */
 }
